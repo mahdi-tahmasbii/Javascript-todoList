@@ -1,0 +1,104 @@
+body {
+  font-family: Vazirmatn, sans-serif;
+  box-sizing: border-box;
+}
+.hidden {
+  display: none;
+}
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.user-input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 2px solid rgb(0, 191, 255);
+}
+
+.btn-add-todo,
+.btn-edit-todo {
+  padding: 12px;
+  border-radius: 6px;
+  border: transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn-add-todo {
+  background-color: rgb(0, 98, 255);
+}
+.btn-add-todo:hover {
+  background-color: blue;
+}
+.btn-add-todo:active {
+  background-color: rgb(4, 3, 95);
+}
+.btn-edit-todo {
+  background-color: rgb(7, 226, 120);
+}
+.btn-edit-todo:hover {
+  background-color: rgb(10, 159, 80);
+}
+.btn-edit-todo:active {
+  background-color: rgb(4, 56, 31);
+}
+.todo-list {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  list-style: none;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.todo-delete {
+  margin-left: 10px;
+  border-radius: 4px;
+  padding: 8px 20px;
+  border: transparent;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  align-items: center;
+  text-align: center;
+}
+
+.todo-delete:hover {
+  background-color: black;
+  color: white;
+}
+
+.todo-edit:active {
+  background-color: white;
+  color: black;
+}
+.todo-edit {
+  margin-left: 10px;
+  border-radius: 4px;
+  padding: 8px 20px;
+  border: transparent;
+  background-color: navy;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.todo-edit:hover {
+  background-color: black;
+  color: white;
+}
+
+.todo-edit:active {
+  background-color: white;
+  color: black;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
